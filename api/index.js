@@ -11,9 +11,9 @@ app.set('view engine', 'ejs');
 //app.set("views", path.join(__dirname, "views"));
 
 /*
-or add functions includeFiles to vercel.json
-and move views back out
-and comment out above app.set views
+or move views folder back out
+and add functions includeFiles to vercel.json
+and comment out above app.set("views"...
 */
 
 
