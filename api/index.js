@@ -5,8 +5,10 @@ const app = express();
 
 app.set('view engine', 'ejs'); 
 
-
-app.set("views", path.join(__dirname, "views"));
+// lots of trial and error on this one
+// what finally worked was to move
+// views folder right inside api folder
+//app.set("views", path.join(__dirname, "views"));
 
 
 app.get("/", (req, res) => res.send("Express on Vercel"));
