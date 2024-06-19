@@ -2,7 +2,7 @@ const express = require("express");
 const app = express();
 
 app.set('view engine', 'ejs'); // Set EJS as the view engine
-app.set('views', './views'); // Specify the directory where EJS templates are located
+app.set('views', 'views'); // Specify the directory where EJS templates are located
 
 app.get("/", (req, res) => res.send("Express on Vercel"));
 
