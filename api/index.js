@@ -10,6 +10,12 @@ app.set('view engine', 'ejs');
 // views folder right inside api folder
 //app.set("views", path.join(__dirname, "views"));
 
+/*
+or add functions includeFiles to vercel.json
+and move views back out
+and comment out above app.set views
+*/
+
 
 app.get("/", (req, res) => res.send("Express on Vercel"));
 
