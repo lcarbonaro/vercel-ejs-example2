@@ -3,20 +3,16 @@ const path = require("path");
 
 const app = express();
 
-app.set('view engine', 'ejs'); // Set EJS as the view engine
+app.set('view engine', 'ejs'); 
 
-//app.set('views', 'views'); // Specify the directory where EJS templates are located
-//app.set("views", __dirname + "/views");
-//app.use(express.static(__dirname + "views"));
+
 app.set("views", path.join(__dirname, "views"));
-
-
 
 
 app.get("/", (req, res) => res.send("Express on Vercel"));
 
 app.get("/hello", (req, res) => {
-    res.render('index');
+    res.render('index', {name:"Tom"});
 });
 
 app.listen(3000, () => console.log("Server ready on port 3000."));
