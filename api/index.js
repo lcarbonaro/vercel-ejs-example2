@@ -20,7 +20,7 @@ and comment out above app.set views
 app.get("/", (req, res) => res.send("Express on Vercel"));
 
 app.get("/hello", (req, res) => {
-    res.render('index', {name:"Tom"});
+    res.render('pages/index', {name:"Tom"});
 });
 
 app.listen(3000, () => console.log("Server ready on port 3000."));
